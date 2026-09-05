@@ -6,7 +6,7 @@ A production-grade **SaaS marketing site + live analytics dashboard** built as a
 
 **Next.js 16 · TypeScript · Tailwind CSS v4 · shadcn/ui (Base UI) · Recharts · Framer Motion**
 
-[![CI](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](.github/workflows/ci.yml)
+[![CI](https://github.com/Krish10021995/nova/actions/workflows/ci.yml/badge.svg)](https://github.com/Krish10021995/nova/actions/workflows/ci.yml)
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](#deployment)
 [![Node](https://img.shields.io/badge/Node.js-24.20.0-339933?logo=nodedotjs)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org)
