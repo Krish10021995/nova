@@ -53,7 +53,7 @@ export function Features() {
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, i) => (
             <Reveal key={feature.title} delay={i * 0.08}>
-              <Card className="h-full transition-colors hover:border-border">
+              <Card className="h-full transition-[box-shadow] hover:ring-2 hover:ring-primary/40">
                 <CardHeader>
                   <div className="mb-4 inline-flex size-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
                     <feature.icon className="size-5" />

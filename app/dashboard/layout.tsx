@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MobileNav } from "@/components/dashboard/mobile-nav";
 
 export const metadata: Metadata = {
   title: "Analytics Overview",
@@ -9,5 +10,10 @@ export const metadata: Metadata = {
 export default function DashboardLayout({
   children,
 }: LayoutProps<"/dashboard">) {
-  return children;
+  return (
+    <>
+      {children}
+      <MobileNav />
+    </>
+  );
 }

@@ -17,7 +17,7 @@ export default function DashboardPage() {
     <div className="min-h-dvh bg-background">
       <Sidebar />
       <DashboardHeader />
-      <main className="px-4 pb-10 sm:px-6 lg:ml-16 lg:px-8">
+      <main className="px-4 pb-24 sm:px-6 lg:ml-16 lg:px-8 lg:pb-10">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-4 py-6 sm:flex-row sm:items-end sm:justify-between">
             <div>

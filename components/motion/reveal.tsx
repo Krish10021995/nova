@@ -24,6 +24,7 @@ export function Reveal({
   return (
     <motion.div
       className={className}
+      data-reveal
       variants={variants}
       initial="hidden"
       whileInView="visible"

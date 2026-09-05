@@ -20,6 +20,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-muted/60 px-3 py-1 text-xs font-medium text-muted-foreground"
+          data-reveal
         >
           <Sparkles className="size-3.5 text-violet-500" />
           Product analytics, minus the busywork
@@ -30,6 +31,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.08, ease: "easeOut" }}
           className="max-w-3xl text-balance font-heading text-4xl leading-[1.1] font-semibold tracking-tight sm:text-6xl"
+          data-reveal
         >
           Understand your product,
           <span className="bg-gradient-to-r from-violet-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
@@ -43,6 +45,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.16, ease: "easeOut" }}
           className="mt-6 max-w-2xl text-pretty text-lg text-muted-foreground"
+          data-reveal
         >
           Nova turns raw product data into revenue, retention, and activation
           insights your whole team actually uses — no SQL required.
@@ -53,6 +56,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.24, ease: "easeOut" }}
           className="mt-8 flex flex-col gap-3 sm:flex-row"
+          data-reveal
         >
           <Button
             render={<Link href="/dashboard" />}
@@ -76,6 +80,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
           className="mt-16 w-full"
+          data-reveal
         >
           <HeroMockup />
         </motion.div>

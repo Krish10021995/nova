@@ -2,18 +2,34 @@ import * as React from "react";
 import Link from "next/link";
 import { Logo } from "@/components/brand/logo";
 
-const columns = [
+const columns: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Product",
-    links: ["Overview", "Pricing", "Changelog", "Roadmap"],
+    links: [
+      { label: "Overview", href: "/" },
+      { label: "Pricing", href: "/pricing" },
+      { label: "Changelog", href: "/changelog" },
+      { label: "Roadmap", href: "/roadmap" },
+    ],
   },
   {
     title: "Company",
-    links: ["About", "Blog", "Careers", "Contact"],
+    links: [
+      { label: "About", href: "/about" },
+      { label: "Blog", href: "/blog" },
+      { label: "Careers", href: "/careers" },
+      { label: "Contact", href: "/contact" },
+    ],
   },
   {
     title: "Resources",
-    links: ["Documentation", "API reference", "Status", "Community"],
+    links: [
+      { label: "Documentation", href: "/docs" },
+      { label: "Handbook", href: "/handbook" },
+      { label: "API reference", href: "/docs/api-reference" },
+      { label: "Status", href: "/status" },
+      { label: "Community", href: "/community" },
+    ],
   },
 ];
 
@@ -23,7 +39,9 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
-            <Logo />
+            <Link href="/" aria-label="Nova home">
+              <Logo />
+            </Link>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               Product analytics for modern teams. A portfolio showcase built
               with Next.js, TypeScript, and Tailwind CSS.
@@ -34,12 +52,12 @@ export function Footer() {
               <h3 className="text-sm font-semibold">{column.title}</h3>
               <ul className="mt-4 space-y-2.5">
                 {column.links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <Link
-                      href="#"
+                      href={link.href}
                       className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                     >
-                      {link}
+                      {link.label}
                     </Link>
                   </li>
                 ))}
@@ -50,10 +68,22 @@ export function Footer() {
         <div className="mt-12 flex flex-col gap-4 border-t border-border/60 pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Nova. Built by Krishnendu Pramanik.</p>
           <div className="flex gap-6">
-            <Link href="#" className="transition-colors hover:text-foreground">
+            <Link
+              href="/docs"
+              className="transition-colors hover:text-foreground"
+            >
+              Documentation
+            </Link>
+            <Link
+              href="/privacy"
+              className="transition-colors hover:text-foreground"
+            >
               Privacy
             </Link>
-            <Link href="#" className="transition-colors hover:text-foreground">
+            <Link
+              href="/terms"
+              className="transition-colors hover:text-foreground"
+            >
               Terms
             </Link>
           </div>

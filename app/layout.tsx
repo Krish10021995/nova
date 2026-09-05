@@ -59,6 +59,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           <TooltipProvider delay={200}>{children}</TooltipProvider>
         </ThemeProvider>
+        <noscript>
+          <style>
+            {`[data-reveal]{opacity:1!important;transform:none!important;visibility:visible!important}`}
+          </style>
+        </noscript>
       </body>
     </html>
   );

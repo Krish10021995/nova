@@ -12,7 +12,7 @@ export function KpiCards() {
       {kpiCards.map((card) => {
         const up = card.trend === "up";
         return (
-          <Card key={card.title} className="transition-colors hover:border-border">
+          <Card key={card.title} className="transition-[box-shadow] hover:ring-2 hover:ring-border">
             <CardContent className="p-5">
               <p className="text-sm text-muted-foreground">{card.title}</p>
               <div className="mt-3 flex items-end justify-between gap-2">

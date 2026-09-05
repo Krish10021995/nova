@@ -14,7 +14,7 @@ import { revenueSeries } from "@/lib/data";
 
 export function HeroMockup() {
   return (
-    <div className="relative w-full max-w-3xl">
+    <div className="relative mx-auto w-full max-w-3xl">
       <div
         aria-hidden
         className="absolute -inset-x-8 -top-12 -bottom-8 rounded-full bg-gradient-to-tr from-violet-500/25 via-indigo-500/25 to-blue-500/25 blur-3xl"
